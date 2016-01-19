@@ -1,10 +1,5 @@
-nitroshare (0.3.0) unstable; urgency=low
+nitroshare (0.3.0-1) unstable; urgency=low
 
-  * Updated to Qt 5.x from 4.x
-  * Removed configuration wizard
-  * Network discovery fully automated
-  * Limit removed on size of transferred files
-  * Added the ability to restart transfers after completion
+  * Initial release (Closes: #811564)
 
- -- Nathan Osman <nathan@quickmediasolutions.com>  Sat, 21 Mar 2015 00:45:00 -0700
-
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Tue, 19 Jan 2016 13:17:21 -0800
