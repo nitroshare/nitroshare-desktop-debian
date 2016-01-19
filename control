@@ -2,13 +2,21 @@ Source: nitroshare
 Section: net
 Priority: extra
 Maintainer: Nathan Osman <nathan@quickmediasolutions.com>
-Build-Depends: debhelper (>= 9), dh-exec,  qt5-default (>= 5.1), libqt5svg5-dev, libgtk2.0-dev, libappindicator-dev, libnotify-dev
-Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9),
+               dh-exec,
+               qtbase5-dev (>= 5.1),
+               libqt5svg5-dev,
+               libgtk2.0-dev,
+               libappindicator-dev,
+               libnotify-dev
+Standards-Version: 3.9.6
 Homepage: http://nitroshare.net/
 
 Package: nitroshare
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5svg5
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libqt5svg5
 Description: Cross-platform network file transfer application
  NitroShare is designed to make transferring any file to any device as painless
  as possible. Network discovery is completely automatic, allowing files and
