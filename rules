@@ -5,5 +5,5 @@
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		-DBUILD_APPINDICATOR=on \
-		-DBUILD_LOCAL_API=on
+		-DAPPINDICATOR_SUPPORT=on \
+		-DUNITY_INTEGRATION=on
