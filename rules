@@ -2,8 +2,3 @@
 
 %:
 	dh $@
-
-override_dh_auto_configure:
-	dh_auto_configure -- \
-		-DAPPINDICATOR_SUPPORT=on \
-		-DUNITY_INTEGRATION=on
