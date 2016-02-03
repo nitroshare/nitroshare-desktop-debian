@@ -8,8 +8,7 @@ Build-Depends: debhelper (>= 9),
                qtbase5-dev (>= 5.1),
                libgtk2.0-dev,
                libappindicator-dev,
-               libnotify-dev,
-               libunity-dev
+               libnotify-dev
 Standards-Version: 3.9.6
 Homepage: http://nitroshare.net/
 
