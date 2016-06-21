@@ -1,2 +1,8 @@
 #!/usr/bin/dh-exec
+
+usr/bin
+usr/share/applications
+usr/share/icons
+usr/share/man
+
 debian/nitroshare.ufw => etc/ufw/applications.d/nitroshare

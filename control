@@ -18,6 +18,7 @@ Package: nitroshare
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
+Suggests: nitroshare-nautilus
 Description: Cross-platform network file transfer application
  NitroShare is designed to make transferring any file to any device as painless
  as possible.
@@ -32,3 +33,15 @@ Description: Cross-platform network file transfer application
  .
  An HTTP API is provided that enables other applications running under the same
  account to initiate transfers.
+
+Package: nitroshare-nautilus
+Architecture: all
+Depends: nitroshare,
+         python-nautilus,
+         ${misc:Depends}
+Description: Nautilus extension for sending files with NitroShare
+ NitroShare is designed to make transferring any file to any device as painless
+ as possible.
+ .
+ This extension for Nautilus adds a "send with NitroShare" menu to files and
+ directories, simplifying the process of selecting items to transfer.
