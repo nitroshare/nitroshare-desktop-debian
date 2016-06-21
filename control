@@ -23,11 +23,12 @@ Description: Cross-platform network file transfer application
  as possible.
  .
  NitroShare uses a JSON-based protocol that is both platform and
- architecture-neutral to transfer files as efficiently as possible.
+ architecture-neutral to transfer files as efficiently as possible. For added
+ security, transfers can be encrypted with TLS.
  .
  IPv4 broadcast is used for automatically discovering other devices on the local
  network running NitroShare. This enables files and entire directories to be
  instantly transferred to the other devices.
  .
- Because the application is only able to transfer data between devices on the
- same network, data in transit is not encrypted.
+ An HTTP API is provided that enables other applications running under the same
+ account to initiate transfers.
