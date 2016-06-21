@@ -2,10 +2,12 @@ nitroshare (0.3.2-1) unstable; urgency=low
 
   * Switch default transfer directly to "Downloads"
   * Add local HTTP API
+  * Add Nautilus extension
   * Add option to automatically start after login
-  * Removed build dependency on libunity in favor of runtime detection
+  * Provide options for encrypting transfers with TLS
+  * Remove build dependency on libunity in favor of runtime detection
 
- -- Nathan Osman <nathan@quickmediasolutions.com>  Tue, 07 Jun 2016 14:00:20 -0700
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Tue, 20 Jun 2016 22:31:44 -0700
 
 nitroshare (0.3.1-1) unstable; urgency=low
 
