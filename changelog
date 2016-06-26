@@ -1,8 +1,9 @@
 nitroshare (0.3.2-1) unstable; urgency=low
 
-  * Switch default transfer directly to "Downloads"
+  * Switch default transfer directory to "Downloads"
   * Add local HTTP API
   * Add Nautilus extension
+  * Add ability to drop files over the transfer window
   * Add option to automatically start after login
   * Provide options for encrypting transfers with TLS
   * Remove build dependency on libunity in favor of runtime detection
