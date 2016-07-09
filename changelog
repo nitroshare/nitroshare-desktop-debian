@@ -1,6 +1,7 @@
 nitroshare (0.3.2-1) unstable; urgency=low
 
   * Switch default transfer directory to "Downloads"
+  * Enable translations
   * Add local HTTP API
   * Add Nautilus extension
   * Add ability to drop files over the transfer window
@@ -8,7 +9,7 @@ nitroshare (0.3.2-1) unstable; urgency=low
   * Provide options for encrypting transfers with TLS
   * Remove build dependency on libunity in favor of runtime detection
 
- -- Nathan Osman <nathan@quickmediasolutions.com>  Tue, 20 Jun 2016 22:31:44 -0700
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Fri, 08 Jul 2016 21:35:11 -0700
 
 nitroshare (0.3.1-1) unstable; urgency=low
 
