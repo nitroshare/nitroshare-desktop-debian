@@ -1,3 +1,11 @@
+nitroshare (0.3.3-1) unstable; urgency=low
+
+  * Fix bug that broke progress and status display
+  * Fix missing indicator in KDE
+  * Add extension for Nemo
+
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Mon, 11 Jul 2016 15:40:17 -0700
+
 nitroshare (0.3.2-1) unstable; urgency=low
 
   * Switch default transfer directory to "Downloads"
