@@ -51,7 +51,7 @@ Description: Nautilus extension for sending files with NitroShare
 Package: nitroshare-nemo
 Architecture: all
 Depends: nitroshare,
-         nemo-python,
+         python-nemo | nemo-python,
          ${misc:Depends}
 Description: Nemo extension for sending files with NitroShare
  NitroShare is designed to make transferring any file to any device as painless
