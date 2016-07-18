@@ -69,5 +69,5 @@ Description: Caja extension for sending files with NitroShare
  NitroShare is designed to make transferring any file to any device as painless
  as possible.
  .
- This extension for Nemo adds a "send with NitroShare" menu to files and
+ This extension for Caja adds a "send with NitroShare" menu to files and
  directories, simplifying the process of selecting items to transfer.
