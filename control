@@ -38,7 +38,7 @@ Description: Cross-platform network file transfer application
 
 Package: nitroshare-nautilus
 Architecture: all
-Depends: nitroshare,
+Depends: nitroshare (>= 0.3.1),
          python-nautilus,
          ${misc:Depends}
 Description: Nautilus extension for sending files with NitroShare
@@ -50,10 +50,22 @@ Description: Nautilus extension for sending files with NitroShare
 
 Package: nitroshare-nemo
 Architecture: all
-Depends: nitroshare,
+Depends: nitroshare (>= 0.3.1),
          python-nemo | nemo-python,
          ${misc:Depends}
 Description: Nemo extension for sending files with NitroShare
+ NitroShare is designed to make transferring any file to any device as painless
+ as possible.
+ .
+ This extension for Nemo adds a "send with NitroShare" menu to files and
+ directories, simplifying the process of selecting items to transfer.
+
+Package: nitroshare-caja
+Architecture: all
+Depends: nitroshare (>= 0.3.1),
+         python-caja,
+         ${misc:Depends}
+Description: Caja extension for sending files with NitroShare
  NitroShare is designed to make transferring any file to any device as painless
  as possible.
  .
