@@ -1,7 +1,9 @@
 nitroshare (0.3.4-1) unstable; urgency=low
 
-  * Update translations
   * Add support for device discovery via mDNS
+  * Add quarantine mode for receiving transfers
+  * Add Arabic, German, Italian, & Polish translations
+  * Add button to open transfer directory to transfer window
 
  -- Nathan Osman <nathan@quickmediasolutions.com>  Tue, 16 May 2017 12:06:47 -0700
 
