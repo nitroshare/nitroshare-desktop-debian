@@ -1,3 +1,9 @@
+nitroshare (0.4.0-1) unstable; urgency=low
+
+  * Complete rewrite, splitting the app into components
+
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Mon, 16 Oct 2017 13:26:06 -0700
+
 nitroshare (0.3.4-1) unstable; urgency=low
 
   * Add support for device discovery via mDNS

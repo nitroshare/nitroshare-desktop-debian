@@ -1,0 +1,3 @@
+usr/lib/nitroshare/plugins/libfilesystem.so
+usr/lib/nitroshare/plugins/liblan.so
+usr/lib/nitroshare/plugins/libmdns.so

@@ -3,72 +3,65 @@ Section: net
 Priority: extra
 Maintainer: Nathan Osman <nathan@quickmediasolutions.com>
 Build-Depends: debhelper (>= 9),
-               dh-exec,
                cmake (>= 3.2.0),
-               qtbase5-dev (>= 5.1),
-               qttools5-dev-tools,
-               qttools5-dev-tools (>= 5.5) | qttools5-dev,
-               libqt5svg5-dev,
-               libgtk2.0-dev,
-               libappindicator-dev,
-               libnotify-dev,
+               qtbase5-dev (>= 5.4),
                libqhttpengine-dev,
                libqmdnsengine-dev
 Standards-Version: 3.9.8
 Homepage: http://nitroshare.net/
 
-Package: nitroshare
+Package: libnitroshare0
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
-Suggests: nitroshare-nautilus
 Description: Cross-platform network file transfer application
- NitroShare is designed to make transferring any file to any device as painless
- as possible.
  .
- NitroShare uses a JSON-based protocol that is both platform and
- architecture-neutral to transfer files as efficiently as possible. For added
- security, transfers can be encrypted with TLS.
- .
- IPv4 broadcast is used for automatically discovering other devices on the local
- network running NitroShare. This enables files and entire directories to be
- instantly transferred to the other devices.
- .
- An HTTP API is provided that enables other applications running under the same
- account to initiate transfers.
+ This package contains the shared library that provides core functionality for
+ managing discovered devices and performing transfers.
 
-Package: nitroshare-nautilus
-Architecture: all
-Depends: nitroshare (>= 0.3.1),
-         python-nautilus,
-         ${misc:Depends}
-Description: Nautilus extension for sending files with NitroShare
- NitroShare is designed to make transferring any file to any device as painless
- as possible.
+Package: libnitroshare-dev
+Architecture: any
+Depends: ${misc:Depends},
+         libnitroshare0 (= ${binary:Version})
+Description: Cross-platform network file transfer application
  .
- This extension for Nautilus adds a "send with NitroShare" menu to files and
- directories, simplifying the process of selecting items to transfer.
+ This package contains the files necessary for development.
 
-Package: nitroshare-nemo
-Architecture: all
-Depends: nitroshare (>= 0.3.1),
-         python-nemo | nemo-python,
+Package: nitroshare-plugins-core
+Architecture: any
+Depends: ${shlibs:Depends},
          ${misc:Depends}
-Description: Nemo extension for sending files with NitroShare
- NitroShare is designed to make transferring any file to any device as painless
- as possible.
+Description: Cross-platform network file transfer application
  .
- This extension for Nemo adds a "send with NitroShare" menu to files and
- directories, simplifying the process of selecting items to transfer.
+ This package contains the core plugins required to facilitate basic transfer
+ operation.
 
-Package: nitroshare-caja
-Architecture: all
-Depends: nitroshare (>= 0.3.1),
-         python-caja,
+Package: nitroshare-plugins-ui
+Architecture: any
+Depends: ${shlibs:Depends},
          ${misc:Depends}
-Description: Caja extension for sending files with NitroShare
- NitroShare is designed to make transferring any file to any device as painless
- as possible.
+Description: Cross-platform network file transfer application
  .
- This extension for Caja adds a "send with NitroShare" menu to files and
- directories, simplifying the process of selecting items to transfer.
+ This package contains the plugins that provide common UI functionality for the
+ desktop application.
+
+Package: nitroshare-cli
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         nitroshare-plugins-core (= ${binary:Version})
+Description: Cross-platform network file transfer application
+ .
+ This package contains the CLI application for transferring files with other
+ devices on the local network.
+
+Package: nitroshare-ui
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         nitroshare-plugins-core (= ${binary:Version}),
+         nitroshare-plugins-ui (= ${binary:Version})
+Description: Cross-platform network file transfer application
+ .
+ This package contains the desktop application for transferring files with
+ other devices on the local network.

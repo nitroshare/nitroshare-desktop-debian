@@ -1,6 +1,13 @@
 #!/usr/bin/make -f
 
-export QT_SELECT := qt5
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
 	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DBUILD_TESTS=on \
+		-DINSTALL_LIB_PATH=lib/$(DEB_HOST_MULTIARCH)
