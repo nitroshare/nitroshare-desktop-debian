@@ -1,2 +1,2 @@
-usr/lib/nitroshare/plugins/libsettingsui.so
-usr/lib/nitroshare/plugins/libtray.so
+usr/lib/*/nitroshare/plugins/libsettingsui.so
+usr/lib/*/nitroshare/plugins/libtray.so
