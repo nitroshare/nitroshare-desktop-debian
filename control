@@ -12,6 +12,7 @@ Homepage: http://nitroshare.net/
 
 Package: libnitroshare0
 Architecture: any
+Section: libs
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Description: Cross-platform network file transfer application
@@ -21,6 +22,7 @@ Description: Cross-platform network file transfer application
 
 Package: libnitroshare-dev
 Architecture: any
+Section: libdevel
 Depends: ${misc:Depends},
          libnitroshare0 (= ${binary:Version})
 Description: Cross-platform network file transfer application
