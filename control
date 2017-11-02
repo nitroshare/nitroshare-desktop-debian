@@ -67,3 +67,12 @@ Description: Cross-platform network file transfer application
  .
  This package contains the desktop application for transferring files with
  other devices on the local network.
+
+Package: nitroshare-nmh
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Cross-platform network file transfer application
+ .
+ This package contains the native messaging host used by web browsers to
+ interact with a NitroShare client running locally.
