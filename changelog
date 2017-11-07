@@ -1,8 +1,10 @@
 nitroshare (0.4.0-1) unstable; urgency=low
 
-  * Complete rewrite, splitting the app into components
+  * Move core application functionality into shared library
+  * Add plugin system for extending the application
+  * Add desktop widget for dragging-and-dropping files
 
- -- Nathan Osman <nathan@quickmediasolutions.com>  Mon, 16 Oct 2017 13:26:06 -0700
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Mon, 06 Nov 2017 21:50:58 -0800
 
 nitroshare (0.3.4-1) unstable; urgency=low
 
@@ -11,7 +13,7 @@ nitroshare (0.3.4-1) unstable; urgency=low
   * Add Arabic, German, Italian, & Polish translations
   * Add button to open transfer directory to transfer window
 
- -- Nathan Osman <nathan@quickmediasolutions.com>  Tue, 16 May 2017 12:06:47 -0700
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Mon, 16 Oct 2017 13:26:06 -0700
 
 nitroshare (0.3.3-1) unstable; urgency=low
 
