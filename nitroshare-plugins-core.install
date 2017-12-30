@@ -1,3 +1,9 @@
+usr/lib/*/nitroshare/plugins/libapi.so
+usr/lib/*/nitroshare/plugins/libautostart.so
+usr/lib/*/nitroshare/plugins/libbroadcast.so
+usr/lib/*/nitroshare/plugins/libdevice.so
 usr/lib/*/nitroshare/plugins/libfilesystem.so
 usr/lib/*/nitroshare/plugins/liblan.so
 usr/lib/*/nitroshare/plugins/libmdns.so
+usr/lib/*/nitroshare/plugins/libnmh.so
+usr/lib/*/nitroshare/plugins/liburl.so

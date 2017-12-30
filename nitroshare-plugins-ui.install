@@ -1,2 +1,12 @@
+usr/lib/*/nitroshare/plugins/libabout.so
+usr/lib/*/nitroshare/plugins/libdev.so
+usr/lib/*/nitroshare/plugins/libdeviceui.so
+usr/lib/*/nitroshare/plugins/libfilesystemui.so
+usr/lib/*/nitroshare/plugins/libloggerui.so
+usr/lib/*/nitroshare/plugins/libpluginui.so
 usr/lib/*/nitroshare/plugins/libsettingsui.so
+usr/lib/*/nitroshare/plugins/libsharebox.so
+usr/lib/*/nitroshare/plugins/libtransferui.so
 usr/lib/*/nitroshare/plugins/libtray.so
+usr/lib/*/nitroshare/plugins/liburlui.so
+usr/lib/*/nitroshare/plugins/libwizard.so
